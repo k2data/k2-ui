@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/k2data/k2-ui#readme",
   "dependencies": {
+    "jquery": "^2.2.3",
     "semantic-ui": "^2.1.8"
   }
 }
