@@ -1,3 +1,28 @@
 /*******************************
          Theme Overrides
 *******************************/
+@font-face {
+   font-family: 'icomoondelet';
+    src:    url('@{fontPath}/icomoondelet.eot?eidi5z');
+    src:    url('@{fontPath}/icomoondelet.eot?eidi5z#iefix') format('embedded-opentype'),
+        url('@{fontPath}/icomoondelet.ttf?eidi5z') format('truetype'),
+        url('@{fontPath}/icomoondelet.woff?eidi5z') format('woff'),
+        url('@{fontPath}/icomoondelet.svg?eidi5z#icomoondelet') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.ui.label > .close.icon,
+.ui.label > .delete.icon {
+   font-family: 'icomoondelet' !important;
+  // font-size: 1.2em;
+    content: '\1f311';
+}
+.ui.label > .delete.icon:before {
+font-family: 'icomoondelet' !important;
+    content: '\1f311';
+}
+
+// i.icon.delete:before {}
