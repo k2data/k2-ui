@@ -1299,6 +1299,22 @@ a.ui.basic.label:hover {
          Theme Overrides
 *******************************/
 
+@font-face {
+  font-family: 'icomoondelet';
+  src: url('../themes/default/assets/fonts/icomoondelet.eot?eidi5z');
+  src: url('../themes/default/assets/fonts/icomoondelet.eot?eidi5z#iefix') format('embedded-opentype'), url('../themes/default/assets/fonts/icomoondelet.ttf?eidi5z') format('truetype'), url('../themes/default/assets/fonts/icomoondelet.woff?eidi5z') format('woff'), url('../themes/default/assets/fonts/icomoondelet.svg?eidi5z#icomoondelet') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.ui.label > .close.icon,
+.ui.label > .delete.icon {
+  font-family: 'icomoondelet' !important;
+  content: '\1f311';
+}
+.ui.label > .delete.icon:before {
+  font-family: 'icomoondelet' !important;
+  content: '\1f311';
+}
 
 
 /*******************************
