@@ -3,61 +3,34 @@
 *******************************/
 
 @font-face {
-   /* 基于基线baseline画图的checkbox
-    font-family: 'icomoon';
-     src:    url('@{fontPath}/icomoon.eot?yiys9x');
-     src:    url('@{fontPath}/icomoon.eot?yiys9x#iefix') format('embedded-opentype'),
-         url('@{fontPath}/icomoon.ttf?yiys9x') format('truetype'),
-         url('@{fontPath}/icomoon.woff?yiys9x') format('woff'),
-         url('@{fontPath}/icomoon.svg?yiys9x#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    */
-
-    /* font-family: 'icomoon';
-        src:    url('@{fontPath}/icomoon.eot?lroomd');
-        src:    url('@{fontPath}/icomoon.eot?lroomd#iefix') format('embedded-opentype'),
-            url('@{fontPath}/icomoon.ttf?lroomd') format('truetype'),
-            url('@{fontPath}/icomoon.woff?lroomd') format('woff'),
-            url('@{fontPath}/icomoon.svg?lroomd#icomoon') format('svg');
-        font-weight: normal;
-        font-style: normal;*/
-
-     font-family: 'icomoon';
-         src:    url('@{fontPath}/icomoon.eot?7963l0');
-            src:    url('@{fontPath}/icomoon.eot?7963l0#iefix') format('embedded-opentype'),
-                url('@{fontPath}/icomoon.ttf?7963l0') format('truetype'),
-                url('@{fontPath}/icomoon.woff?7963l0') format('woff'),
-                url('@{fontPath}/icomoon.svg?7963l0#icomoon') format('svg');
-
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Checkbox';
+  src:
+    url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMg8SBD8AAAC8AAAAYGNtYXAYVtCJAAABHAAAAFRnYXNwAAAAEAAAAXAAAAAIZ2x5Zn4huwUAAAF4AAABYGhlYWQGPe1ZAAAC2AAAADZoaGVhB30DyAAAAxAAAAAkaG10eBBKAEUAAAM0AAAAHGxvY2EAmgESAAADUAAAABBtYXhwAAkALwAAA2AAAAAgbmFtZSC8IugAAAOAAAABknBvc3QAAwAAAAAFFAAAACAAAwMTAZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADoAgPA/8AAQAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAADAAAAAwAAABwAAQADAAAAHAADAAEAAAAcAAQAOAAAAAoACAACAAIAAQAg6AL//f//AAAAAAAg6AD//f//AAH/4xgEAAMAAQAAAAAAAAAAAAAAAQAB//8ADwABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAAAAAAAAAAIAADc5AQAAAAABAEUAUQO7AvgAGgAAARQHAQYjIicBJjU0PwE2MzIfAQE2MzIfARYVA7sQ/hQQFhcQ/uMQEE4QFxcQqAF2EBcXEE4QAnMWEP4UEBABHRAXFhBOEBCoAXcQEE4QFwAAAAABAAABbgMlAkkAFAAAARUUBwYjISInJj0BNDc2MyEyFxYVAyUQEBf9SRcQEBAQFwK3FxAQAhJtFxAQEBAXbRcQEBAQFwAAAAABAAAASQMlA24ALAAAARUUBwYrARUUBwYrASInJj0BIyInJj0BNDc2OwE1NDc2OwEyFxYdATMyFxYVAyUQEBfuEBAXbhYQEO4XEBAQEBfuEBAWbhcQEO4XEBACEm0XEBDuFxAQEBAX7hAQF20XEBDuFxAQEBAX7hAQFwAAAQAAAAIAAHRSzT9fDzz1AAsEAAAAAADRsdR3AAAAANGx1HcAAAAAA7sDbgAAAAgAAgAAAAAAAAABAAADwP/AAAAEAAAAAAADuwABAAAAAAAAAAAAAAAAAAAABwQAAAAAAAAAAAAAAAIAAAAEAABFAyUAAAMlAAAAAAAAAAoAFAAeAE4AcgCwAAEAAAAHAC0AAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQAIAAAAAQAAAAAAAgAHAGkAAQAAAAAAAwAIADkAAQAAAAAABAAIAH4AAQAAAAAABQALABgAAQAAAAAABgAIAFEAAQAAAAAACgAaAJYAAwABBAkAAQAQAAgAAwABBAkAAgAOAHAAAwABBAkAAwAQAEEAAwABBAkABAAQAIYAAwABBAkABQAWACMAAwABBAkABgAQAFkAAwABBAkACgA0ALBDaGVja2JveABDAGgAZQBjAGsAYgBvAHhWZXJzaW9uIDIuMABWAGUAcgBzAGkAbwBuACAAMgAuADBDaGVja2JveABDAGgAZQBjAGsAYgBvAHhDaGVja2JveABDAGgAZQBjAGsAYgBvAHhSZWd1bGFyAFIAZQBnAHUAbABhAHJDaGVja2JveABDAGgAZQBjAGsAYgBvAHhGb250IGdlbmVyYXRlZCBieSBJY29Nb29uLgBGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAC4AAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format('truetype')
+  ;
 }
-
-
 
 /* Checkmark */
 .ui.checkbox label:after,
 .ui.checkbox .box:after {
-  font-family: 'icomoon' !important;
+  font-family: 'Checkbox';
 }
 
 /* Checked */
 .ui.checkbox input:checked ~ .box:after,
 .ui.checkbox input:checked ~ label:after {
-  content: '\1f32f';
+  content: '\e800';
 }
 
 /* Indeterminate */
 .ui.checkbox input:indeterminate ~ .box:after,
 .ui.checkbox input:indeterminate ~ label:after {
   font-size: 12px;
-  content: '\1f32f';
+  content: '\e801';
 }
 
 
 /*  UTF Reference
-.check:before { content: '\41'; }
-.dash:before  { content: '\41'; }
-.plus:before { content: '\41'; }
+.check:before { content: '\e800'; }
+.dash:before  { content: '\e801'; }
+.plus:before { content: '\e802'; }
 */

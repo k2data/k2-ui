@@ -15,10 +15,12 @@
   url("@{fontPath}/@{fontName}.ttf") format('truetype'),
   url("@{fontPath}/@{fontName}.svg#icons") format('svg')
 ;
+
 @opacity: 1;
 @width: @iconWidth;
 @height: 1em;
 @distanceFromText: 0.25rem;
+
 
 /* Variations */
 
@@ -50,7 +52,9 @@
    @cornerIconStroke  @cornerIconStroke 0 @black
 ;
 
-@small: @relativeSmall;
+@mini: 0.4em;
+@tiny: 0.5em;
+@small: 0.75em;
 @medium: 1em;
 @large: 1.5em;
 @big: 2em;
