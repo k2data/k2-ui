@@ -26,9 +26,11 @@
 
 /* This is the single variable that controls them all */
 @emSize   : 14px;
+@emSmallSize : 13px;
 
 /* The size of page text  */
 @fontSize : 14px;
+@defaultFontWeight: 500;
 
 
 /*-------------------
@@ -39,7 +41,7 @@
    for explanation of @px variables
 */
 @relativeBorderRadius: @relative4px;
-@absoluteBorderRadius: @4px;
+@absoluteBorderRadius: @small4px;
 
 @defaultBorderRadius: @absoluteBorderRadius;
 
@@ -520,6 +522,7 @@
 @1px  : unit( (1 / @emSize), rem);
 @2px  : unit( (2 / @emSize), rem);
 @3px  : unit( (3 / @emSize), rem);
+@small4px : unit( (3 / @emSmallSize), rem);
 @4px  : unit( (4 / @emSize), rem);
 @5px  : unit( (5 / @emSize), rem);
 @6px  : unit( (6 / @emSize), rem);
